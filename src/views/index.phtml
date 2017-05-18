@@ -1,0 +1,52 @@
+<?php
+$rota_css = WEBFILES.'src/views/web-files/css/';
+$rota_js = WEBFILES.'src/views/web-files/js/';
+$rota_paginas = WEBFILES;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página Inicial</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>bootstrap-3.3.7.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>bootstrap-theme-3.3.7.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>layout.css" />
+</head>
+<body>
+	<div class="quadro_login">
+		<div style="font-size: 20px; color: #009999; text-align: center;"><b>LOGO</b></div>
+		<div style="font-size: 12px; text-align: center; margin-bottom: 10px;">Descrição da Empresa</div>
+		<div class="quadro_login_campos">
+			<form action='<?php echo $rota_paginas; ?>adm/login/acao/logar/' name="form-logar" class="form_validar" id="form-logar" method='post' style="padding-top: 10px; padding-bottom: 10px;">
+				<input type='hidden' id="pagina" name="pagina" value="inicio" />
+                <div style="float: left; width: 60px; line-height: 30px; text-align: right; margin-right: 10px; margin-bottom: 15px;">
+                	<b>Login:</b>
+                </div>
+                <div style="float: left;">
+                	<input type="text" class="form-control" id="login" name="login" style="width: 240px;" data-required />
+                </div>
+                <div style="clear: both;"></div>
+                <div style="float: left; width: 60px; line-height: 30px; text-align: right; margin-right: 10px; margin-bottom: 15px;">
+                	<b>Senha:</b>
+                </div>
+                <div style="float: left;">
+                	<input type="password" class="form-control" id="senha" name="senha" style="width: 240px;" data-required />
+                </div>
+                <div style="clear: both;"></div>
+                <div style="float: left; width: 70px; line-height: 30px; text-align: right; padding-right: 10px;">
+                	&nbsp;
+                </div>
+                <div style="float: left;">
+                	<input type="submit" value="Entrar" class="btn btn-primary" id="botao-logar" class="btn" />
+                </div>
+                <div style="clear: both;"></div>
+            </form>
+		</div>
+	</div>
+	
+	<script src="<?php echo $rota_js; ?>jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php echo $rota_js; ?>jquery-validate.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php echo $rota_js; ?>maskedinput.js" type="text/javascript" charset="utf-8"></script>
+	<script src="<?php echo $rota_js; ?>bootstrap-3.3.7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="<?php echo $rota_js; ?>script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

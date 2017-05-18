@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #F4F4F4;
+}
+
+.quadro_login {
+    position: absolute;
+    height: 210px;
+    width: 336px;
+    top: 40%;
+    left: 50%;
+    margin: -105px 0 0 -168px;
+    font-family: Tahoma;
+}
+
+.quadro_login_campos {
+    background-color: #EBF5FC;
+    border: 2px #AED9F0 solid;
+    box-shadow: 0px 0px 5px 5px #DFDFDF;
+    border-radius: 5px 5px 5px 5px;
+}
