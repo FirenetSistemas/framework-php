@@ -1,6 +1,7 @@
 <?php
 $rota_css = WEBFILES.'src/views/web-files/css/';
 $rota_js = WEBFILES.'src/views/web-files/js/';
+$rota_imagens = WEBFILES.'src/views/web-files/imagens/';
 $rota_paginas = WEBFILES;
 ?>
 <!DOCTYPE html>
@@ -8,19 +9,22 @@ $rota_paginas = WEBFILES;
 <head>
     <meta charset="UTF-8">
 	<title>Página Não Encontrada</title>
+	<link rel="stylesheet" media="screen" href="<?php echo $rota_css; ?>jquery-ui.min.css" />
+    <link rel="stylesheet" media="screen" href="<?php echo $rota_css; ?>jquery-ui.theme.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>bootstrap-3.3.7.min.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>bootstrap-theme-3.3.7.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>bootstrap-theme-3.3.7.min.css" />
     <link rel="stylesheet" media="screen" href="<?php echo $rota_css; ?>font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>layout.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $rota_css; ?>layout.css" />
 </head>
 <body>
 	<br /><br /><br />
 	<h1><center>Página Não Encontrada</center></h1>
 	
 	<script src="<?php echo $rota_js; ?>jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php echo $rota_js; ?>jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php echo $rota_js; ?>bootstrap-3.3.7.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?php echo $rota_js; ?>jquery-validate.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?php echo $rota_js; ?>maskedinput.js" type="text/javascript" charset="utf-8"></script>
-	<script src="<?php echo $rota_js; ?>bootstrap-3.3.7.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="<?php echo $rota_js; ?>script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
