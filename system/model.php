@@ -4,10 +4,17 @@ namespace FirenetSolucoes\system;
 class Model{
     protected $db;
     public $_tabela;
+    public $_BancoDados;
+    public $lastId;
     
     public function __construct() {
         try{
-            $this->db = new \PDO('mysql:host=localhost;dbname=pgsst;', 'root', 'gol132', array(\PDO::ATTR_PERSISTENT => true));
+            if(!empty($this->_BancoDados)){
+                $banco_dados = $this->_BancoDados;
+            }else{
+                $banco_dados = 'banco_dados';
+            }
+            $this->db = new \PDO('mysql:host=localhost;dbname='.$banco_dados.';', 'usuario', 'senha', array(\PDO::ATTR_PERSISTENT => true));
         }catch(PDOException $e){
             echo 'Falha ao conectar no banco de dados: '.$e->getMessage();
             die;
@@ -21,7 +28,9 @@ class Model{
         }
         $campos = implode(", ", array_keys($dados));
         $valores = "'".implode("','", array_values($valores))."'";
-        return $this->db->query("INSERT INTO `{$this->_tabela}` ({$campos}) VALUES ({$valores})");
+        $inserir = $this->db->query("INSERT INTO `{$this->_tabela}` ({$campos}) VALUES ({$valores})");
+        $this->lastId = $this->db->lastInsertId();
+        return $inserir;
     }
     
     public function read($where = null, $limit = null, $offset = null, $orderby = null, $groupby = null){

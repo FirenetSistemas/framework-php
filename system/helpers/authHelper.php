@@ -61,6 +61,7 @@ class AuthHelper{
     public function login(){
         $db = new Model();
         $db->_tabela = $this->tableName;
+        $db->_BancoDados = 'banco_dados';
         $where = $this->userColumn."='".$this->user."' and ".$this->passColumn."='".$this->pass."'";
         $sql = $db->read($where, '1');
         if(count($sql) > 0){
