@@ -1,9 +1,9 @@
 # framework-php
 Extrutura em php para controle de aplicação no padrão PSR-4
 
-Esse é um framework simples para utilização na criação de sites e sistemas, para utilizar recomenda usar esse codigo no  servidor PHP 7 mais funciona no PHP 5.3.2
+Esse é um framework simples para utilização na criação de sites e sistemas, para utilizar recomenda-se usar num servidor PHP 7, porem funciona também no PHP 5.3.2
 
-Como utilizando o código:
+Utilizando o código:
 
 - Baixe os arquivos para na pasta web do servidor ex: "htdocs, www, public_html, etc..".
 
@@ -20,6 +20,6 @@ $banco_dados: variavel para que irá par o nome do banco de dados
 usuario: altere para o nome do usuario que tem acesso ao banco de dados
 senha: alterei para a senha do usuario que tem acesso ao banco de dados
 
-Pronto depois disso irá abrir um modelo simples de uma página com login.
+Pronto isso irá abrir um modelo simples de uma página com login.
 
-Nos proximos dias irei atualizar essas informações incluindo como utilizar o framework.
+Nos próximos dias irei atualizar essas informações, incluindo como utilizar o framework.
