@@ -1,7 +1,10 @@
+
+
+# framework-php
+
 Clonar Projeto:
 git clone https://github.com/FirenetSolucoes/framework-php
 
-# framework-php
 Extrutura em php para controle de aplicação no padrão PSR-4
 
 Esse é um framework simples para utilização na criação de sites e sistemas, para utilizar recomenda-se usar num servidor PHP 7, porem funciona também no PHP 5.3.2
