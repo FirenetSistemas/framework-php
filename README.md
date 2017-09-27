@@ -1,3 +1,6 @@
+Clonar Projeto:
+git clone https://github.com/FirenetSolucoes/framework-php
+
 # framework-php
 Extrutura em php para controle de aplicação no padrão PSR-4
 
