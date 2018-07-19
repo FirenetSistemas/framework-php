@@ -10,7 +10,7 @@ define('CONTROLLERS', 'src/controllers/');
 define('MODELS', 'src/models/');
 define('VIEWS', 'src/views/');
 define('HELPERS', 'system/helpers/');
-define('WEBFILES', '/basico_melhor/');
+define('WEBFILES', '/clientes/basico_melhor/');
 
 require 'vendor/autoload.php';
 

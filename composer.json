@@ -1,4 +1,19 @@
 {
+	"name":"firenet/framework-php",
+	"description": "Framework simples em php em PSR-4",
+	"require": {
+		"php": ">=7.0"
+	},
+	"type": "library",
+	"version": "1.0",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Juliano Santos",
+			"email": "juliano.sites@hotmail.com"
+		}
+	],
+	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
 			"FirenetSolucoes\\" : "",
